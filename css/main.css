@@ -55,7 +55,7 @@ img {
 }
 
 .container {
-  width: 450px;
+  max-width: 480px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 15px;
@@ -135,7 +135,7 @@ img {
   border: none;
 }
 
-.hidden-header {
+.hidden-section {
   display: none;
 }
 
@@ -190,11 +190,11 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1600px;
+  max-width: 768px;
 }
 
 .backdrop {
@@ -417,5 +417,49 @@ img {
 
 .modal-form__privacy-policy-link {
   color: #2196F3;
+}
+
+.benefits-list__title {
+  color: #212121;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.benefits-list__text {
+  color: #757575;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.benefits-list__item {
+  max-width: 450px;
+}
+
+.benefits-list__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.benefits-list__thumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=main.css.map */
