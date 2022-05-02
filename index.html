@@ -16,6 +16,18 @@
         <!-- page-header__container -->
         <div class="container page-header--flex">
             <a href="index.html" class="logo">Web<span class="logo--accent logo--dark">Studio</span></a>
+            <button type="button" class="menu-button" data-menu-open>
+                <svg width="24" height="16">
+                    <use class="menu-icon" href="./images/icons.svg#menu-icon"></use>
+                </svg>
+            </button>
+            <div class="phone-menu is-hidden" data-menu>
+                <button type="button" class="menu-button-close" data-menu-close>
+                    <svg width="24" height="16">
+                        <use class="close-menu-icon" href="./images/icons.svg#close-menu-icon"></use>
+                    </svg>
+                </button>
+            </div>
             <div class="hidden-section">
                 <nav class="nav-menu">
                     <ul class="nav-menu__list">
@@ -483,5 +495,6 @@
         </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu-open.js"></script>
 </body>
 </html>

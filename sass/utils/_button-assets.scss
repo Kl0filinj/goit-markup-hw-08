@@ -20,6 +20,14 @@
     background-color: $accent-color;
 }
 
+.menu-button,
+.menu-button-close {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 .button--filter {
     color: $headline-color;
     background-color: $main-button-bg-color;

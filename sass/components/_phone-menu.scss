@@ -1,0 +1,18 @@
+.phone-menu {
+
+    &.is-hidden {
+        display: none;
+    }
+
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.menu-button-close {
+    position: absolute;
+}
