@@ -27,8 +27,8 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
 
-    min-width: 528px;
-    min-height: 581px;
+    min-width: 450px;
+    min-height: 609px;
     padding: 40px;
 
     background: $accent-white-color;
@@ -184,8 +184,8 @@
     display: flex;
     align-items: center;
 
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: $form-label-color;
 }
