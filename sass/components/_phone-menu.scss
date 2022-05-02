@@ -13,6 +13,8 @@
     top: 0;
     left: 0;
 
+    overflow-y: scroll;
+
     background-color: $accent-white-color;
 }
 
@@ -20,4 +22,28 @@
     position: absolute;
     top: 21px;
     right: 25px;
+}
+
+.menu-soc-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-soc-list__link {
+    padding: 0 10px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    
+    color: $accent-color;
+}
+
+.menu-soc-list__item {
+    &:not(:last-child) {
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
 }

@@ -26,8 +26,9 @@
 }
 
 .auth-info {
-    display: flex;
-    margin-left: auto;
+    // display: flex;
+    // margin-left: auto;
+    margin-bottom: 64px;
 }
 
 .logo {
@@ -98,32 +99,36 @@
     }
 }
 
-// .auth-info__link {
-//     display: flex;
-//     align-items: center;
+.auth-info__link {
+    // display: flex;
+    // align-items: center;
 
-//     color: $main-text-color;
+    color: $main-text-color;
 
-//     padding-top: 32px;
-//     padding-bottom: 32px;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
 
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.02em;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    text-decoration: none;
 
-//     text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &--menu-size {
+        font-size: 34px;
+        line-height: 1.17;
+    }
 
-//     &:hover,
-//     &:focus {
-//      color: $accent-color;
-//      .auth-info__icon {
-//          fill: $accent-color;
-//      }
-//     }
-// }
+    &:hover,
+    &:focus {
+     color: $accent-color;
+    //  .auth-info__icon {
+    //      fill: $accent-color;
+    //  }
+    }
+}
 
 // .auth-info__icon {
 //     fill:$main-text-color;
@@ -132,8 +137,12 @@
 //     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 // }
 
-// .auth-info__item {
-//     &:not(:first-child) {
-//         margin-left: 50px;
-//     }
-// }
+.auth-info__icon {
+    display: none;
+}
+
+.auth-info__item {
+    &:not(:last-child) {
+        margin-bottom: 35px;
+    }
+}
