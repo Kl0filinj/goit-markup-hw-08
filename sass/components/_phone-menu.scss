@@ -6,13 +6,18 @@
 
     width: 100vw;
     height: 100vh;
-    background-color: red;
+    padding: 48px 40px;
+
 
     position: fixed;
     top: 0;
     left: 0;
+
+    background-color: $accent-white-color;
 }
 
 .menu-button-close {
     position: absolute;
+    top: 21px;
+    right: 25px;
 }
