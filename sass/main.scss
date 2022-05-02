@@ -1,0 +1,19 @@
+// Утилиты и переменные
+@import "utils/vars";
+@import "utils/main-settings";
+@import "utils/button-assets";
+
+// Компоненты
+// Страница "Студия"
+@import "components/page-header";
+@import "components/hero-section";
+@import "components/modal";
+@import "components/benefits-section";
+@import "components/employment-section";
+@import "components/workers-section";
+@import "components/regular-customers-section";
+@import "components/page-footer";
+
+// Страница "Портфолио"
+@import "components/projects-filter";
+@import "components/projects-section";

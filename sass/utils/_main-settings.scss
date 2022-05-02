@@ -1,0 +1,73 @@
+// Основные правила для всех элементов
+body {
+    color: $main-text-color;
+    background-color: $accent-white-color;
+    
+    font-family: $main-font;
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    padding-left: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Опциональные настройки списков */
+
+.nav-menu__list,
+.auth-info,
+.benefits-list,
+.employment__list,
+.workers__list,
+.footer-address__list,
+.filter-list,
+.projects-list,
+.regular-customers__list,
+.workers-soc-thumb,
+.footer-soc-thumb,
+.modal-form__list {
+    list-style-type: none;
+}
+
+// Спрятанные заголовки
+
+.hiden-title {
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    margin: -1px; 
+    border: 0; 
+    padding: 0; 
+    white-space: nowrap; 
+    clip-path: inset(100%); 
+    clip: rect(0 0 0 0); 
+    overflow: hidden;
+}
+
+
+.container {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding:0 15px ;
+    // outline: red solid 1px;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    // outline: green solid 1px;
+}
