@@ -35,13 +35,30 @@
     letter-spacing: 0.03em;
 }
 
-// .workers__list {
-//     display: flex;
-// }
+.workers__list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
 
 .workers__item {
     &:not(:last-child) {
         margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px) / 2);
+        margin-bottom: 30px;
+
+        &:nth-child(2n) {
+            margin-left: 30px;
+        }
+
+        &:nth-last-child(-n + 2) {
+            margin-bottom: 0;
+        }
     }
 }
 
