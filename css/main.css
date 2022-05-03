@@ -1153,16 +1153,35 @@ img {
   margin-bottom: 40px;
 }
 
+@media screen and (min-width: 768px) {
+  .filter-list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
 .filter-list__item {
-  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .filter-list__item:nth-child(-n + 3) {
   margin-bottom: 15px;
 }
 
-.filter-list__item:nth-child(3n + 1) {
-  margin-left: 0;
+@media screen and (min-width: 768px) {
+  .filter-list__item {
+    margin-right: 0px;
+  }
+  .filter-list__item:not(:first-child) {
+    margin-left: 8px;
+  }
+  .filter-list__item:nth-child(n) {
+    margin-bottom: 0;
+  }
 }
 
 .project-card-meta__title {
@@ -1181,13 +1200,44 @@ img {
   letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 768px) {
+  .projects-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .projects-list__item:not(:last-child) {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .projects-list__item {
+    -ms-flex-preferred-size: calc((100% - 30px)/ 2);
+        flex-basis: calc((100% - 30px)/ 2);
+  }
+  .projects-list__item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+  .projects-list__item:nth-child(2n) {
+    margin-left: 30px;
+  }
+}
+
 .projects-list__link {
   display: block;
+  height: 100%;
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1209,6 +1259,14 @@ img {
   border-right: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
   border-left: 1px solid #EEEEEE;
+}
+
+@media screen and (min-width: 768px) {
+  .project-card-meta {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
 }
 
 .projects-card-top {

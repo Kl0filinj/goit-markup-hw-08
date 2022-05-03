@@ -17,15 +17,29 @@
     letter-spacing: 0.03em;
 }
 
-// .projects-list {
-//     display: flex;
-//     flex-wrap: wrap;
-// }
+.projects-list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
 
 .projects-list__item {
     // margin-right: 30px;
     &:not(:last-child) {
         margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px)/ 2);
+
+        &:not(:nth-last-child(-n + 2)) {
+            margin-bottom: 30px;
+        }
+
+        &:nth-child(2n) {
+            margin-left: 30px;
+        }
     }
 }
 
@@ -40,7 +54,11 @@
 
 .projects-list__link {
     display: block;
+    height: 100%;
     text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
 
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -51,6 +69,10 @@
             transform: translateY(0);
         }
     }
+
+    // @media screen and (min-width: 768px) {
+
+    // }
 }
 
 .project-card-meta {
@@ -58,6 +80,10 @@
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
+
+    @media screen and (min-width: 768px) {
+        flex-grow: 1;
+    }
 }
 
 .projects-card-top {
