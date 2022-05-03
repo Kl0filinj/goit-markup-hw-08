@@ -11,11 +11,13 @@
     position: relative;
     align-items: center;
     justify-content: space-between;
-    padding: 16px 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
 
     @media screen and (min-width: 768px) {
         justify-content: center;
-        padding: 0;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
 
@@ -34,6 +36,10 @@
     @media screen and (min-width: 768px) {
         margin-bottom: 0;
         margin-left: 88px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
     }
 }
 
@@ -58,6 +64,11 @@
         display: flex;
         flex-direction: column-reverse;
     }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 305px;
+        flex-direction: row-reverse;
+    }
 }
 
 .logo {
@@ -72,6 +83,11 @@
     letter-spacing: 0.03em;
 
     text-decoration: none;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
 }
 
 .logo--accent {
@@ -170,6 +186,18 @@
         font-size: 12px;
         display: flex;
         align-items: center;
+        padding: 32px 0;
+        &:hover,
+        &:focus {
+            .auth-info__icon {
+                fill: $accent-color;
+                }
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.14;
     }
 }
 
@@ -184,6 +212,28 @@
     margin-right: 8px;
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 767px) {
+        &--size-tel {
+            width: 10px;
+            height: 14px;
+        }
+        &--size-mail {
+            width: 14px;
+            height: 10px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        &--size-tel {
+            width: 10px;
+            height: 16px;
+        }
+        &--size-mail {
+            width: 16px;
+            height: 12px;
+        }
+    }
+
 }
 
 // .auth-info__icon {
@@ -202,6 +252,17 @@
 
         &:not(:first-child) {
             margin-bottom: 10px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        &:not(:last-child) {
+            margin-left: 30px;
+
+        }
+
+        &:not(:first-child) {
+            margin-bottom: 0;
         }
     }
 }
