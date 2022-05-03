@@ -16,18 +16,43 @@
     overflow-y: scroll;
 
     background-color: $accent-white-color;
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: auto;
+        padding: 0;
+    
+        position: static;
+        overflow: hidden;
+    
+        background-color: transparent;
+
+        &.is-hidden {
+            display: flex;
+        }
+    }
 }
 
 .menu-button-close {
     position: absolute;
     top: 21px;
     right: 25px;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
 .menu-soc-list {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
 .menu-soc-list__link {
