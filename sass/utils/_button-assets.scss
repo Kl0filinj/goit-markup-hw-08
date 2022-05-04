@@ -68,4 +68,8 @@
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: none;
+
+    @media screen and (min-width: 1200px) {
+        margin: 0 auto auto 12px;
+    }
 }

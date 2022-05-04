@@ -81,3 +81,10 @@ img {
     padding-bottom: 60px;
     outline: green solid 1px;
 }
+
+
+.hidden-section {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}

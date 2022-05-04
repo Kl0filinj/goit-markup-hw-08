@@ -25,6 +25,9 @@
         justify-content: center;
         flex-wrap: wrap;
     }
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+    }
 }
 
 .benefits-list__item {
@@ -45,6 +48,13 @@
 
         &:nth-last-child(-n + 2) {
             margin-bottom: 0;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 270px;
+        flex-basis: calc((100% - 30px * 3));
+        &:not(:first-child) {
+            margin-left: 30px;
         }
     }
 
