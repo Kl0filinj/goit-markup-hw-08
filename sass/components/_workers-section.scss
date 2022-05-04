@@ -1,24 +1,8 @@
-.workers {
+.section--other-bg{
     background-color: $main-button-bg-color;
 }
 
 .workers__title {
-    color: $headline-color;
-
-    margin-bottom: 30px;
-
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    @media screen and (min-width: 1200px) {
-        font-size: 36px;
-        line-height: 1.16;
-    }
-}
-
-.workers__name {
     color: $headline-color;
 
     margin-bottom: 10px;
@@ -30,7 +14,7 @@
     letter-spacing: 0.03em;
 }
 
-.workers__position {
+.workers__text {
     color: $main-text-color;
 
     text-align: center;
@@ -39,7 +23,7 @@
     letter-spacing: 0.03em;
 }
 
-.workers__list {
+.workers {
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;

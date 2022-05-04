@@ -30,12 +30,12 @@ img {
 .nav-menu__list,
 .auth-info,
 .benefits-list,
-.employment__list,
-.workers__list,
+.employment,
+.workers,
 .footer-address__list,
 .filter-list,
 .projects-list,
-.regular-customers__list,
+.regular-customers,
 .workers-soc-thumb,
 .footer-soc-thumb,
 .modal-form__list,
@@ -63,8 +63,7 @@ img {
     max-width: 450px;
     margin-right: auto;
     margin-left: auto;
-    // padding:0 15px ;
-    outline: red solid 1px;
+    // outline: red solid 1px;
 
     @media screen and (min-width: 768px) {
         max-width: 738px;
@@ -79,10 +78,26 @@ img {
 .section {
     padding-top: 60px;
     padding-bottom: 60px;
-    outline: green solid 1px;
+    // outline: green solid 1px;
     @media screen and (min-width: 1200px) {
         padding-top: 94px;
         padding-bottom: 94px;
+    }
+}
+
+.section__title {
+    color: $headline-color;
+
+    margin-bottom: 30px;
+
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        line-height: 1.16;
     }
 }
 

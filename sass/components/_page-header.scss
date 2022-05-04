@@ -2,7 +2,7 @@
     border-bottom: 1px solid #ECECEC;
 }
 
-.page-header--flex {
+.page-header__container {
     display: flex;
     position: relative;
     align-items: center;
@@ -50,8 +50,6 @@
 
 
 .auth-info {
-    // display: flex;
-    // margin-left: auto;
     margin-bottom: 64px;
 
     @media screen and (min-width: 768px) {
@@ -68,8 +66,6 @@
 }
 
 .logo {
-    // padding: 16px 0;
-
     color: $accent-color;
 
     font-family: $logo-font;
@@ -86,10 +82,8 @@
     }
 }
 
-.logo--accent {
-    &.logo--dark {
-        color: $headline-color;
-    }
+.logo--dark {
+    color: $headline-color;
 }
 
 .nav-menu__link {
@@ -150,13 +144,7 @@
 }
 
 .auth-info__link {
-    // display: flex;
-    // align-items: center;
-
     color: $main-text-color;
-
-    // padding-top: 32px;
-    // padding-bottom: 32px;
 
     font-weight: 500;
     font-size: 24px;
@@ -174,9 +162,6 @@
     &:hover,
     &:focus {
      color: $accent-color;
-    //  .auth-info__icon {
-    //      fill: $accent-color;
-    //  }
     }
     @media screen and (min-width: 768px) {
         font-size: 12px;
@@ -232,10 +217,6 @@
     }
 
 }
-
-// .auth-info__icon {
-//     display: none;
-// }
 
 .auth-info__item {
     &:not(:last-child) {

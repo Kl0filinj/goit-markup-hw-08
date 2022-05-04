@@ -14,8 +14,8 @@
 <body>
     <header class="page-header">
         <!-- page-header__container -->
-        <div class="container page-header--flex">
-            <a href="index.html" class="logo">Web<span class="logo--accent logo--dark">Studio</span></a>
+        <div class="container page-header__container">
+            <a href="index.html" class="logo">Web<span class="logo--dark">Studio</span></a>
             <button type="button" class="menu-button" data-menu-open>
                 <svg width="24" height="16">
                     <use class="menu-icon" href="./images/icons.svg#menu-icon"></use>
@@ -63,7 +63,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="button button--accent main-button--features" data-modal-open>Заказать услугу</button>
+                <button type="button" class="button main-button--features" data-modal-open>Заказать услугу</button>
             </div>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
@@ -115,7 +115,7 @@
                                 </svg>
                                 Соглашаюсь с рассылкой и принимаю <a class="modal-form__privacy-policy-link" href="#">Условия договора</a></label>
                         </div>
-                        <button class="button submit-button--features button--accent" type="submit">Отправить</button>
+                        <button class="button submit-button--features" type="submit">Отправить</button>
                     </form>
                 </div>
             </div>
@@ -163,41 +163,41 @@
                 </ul>
             </div>
         </section>
-        <section class="section employment hidden-section">
+        <section class="section section-no-padding-top hidden-section">
             <div class="container">
-                <h2 class="employment__title">Чем мы занимаемся</h2>
-                <ul class="employment__list">
+                <h2 class="section__title">Чем мы занимаемся</h2>
+                <ul class="employment">
                     <li class="employment__item">
                         <div class="employment__thumb">
                             <img srcset="./images/desktop/employment_desktop/typing.jpg 1x, ./images/desktop/employment_desktop/typing_2x.jpg 2x" src="./images/desktop/employment_desktop/typing.jpg" alt="Написание кода" class="image" width="370" height="294" >
-                            <div class="employment-overlay">
-                                <p class="employment-overlay__text">Десктопные приложения</p>
+                            <div class="employment__overlay">
+                                <p class="employment__overlay-text">Десктопные приложения</p>
                             </div>
                         </div>
                     </li>
                     <li class="employment__item">
                         <div class="employment__thumb">
                             <img srcset="./images/desktop/employment_desktop/phone-dev.jpg 1x, ./images/desktop/employment_desktop/phone-dev_2x.jpg 2x" src="./images/desktop/employment_desktop/phone-dev.jpg" alt="Написание кода" class="image" width="370" height="294" >
-                            <div class="employment-overlay">
-                                <p class="employment-overlay__text">Мобильные приложения</p>
+                            <div class="employment__overlay">
+                                <p class="employment__overlay-text">Мобильные приложения</p>
                             </div>
                         </div>
                     </li>
                     <li class="employment__item">
                         <div class="employment__thumb">
                             <img srcset="./images/desktop/employment_desktop/color-work.jpg 1x, ./images/desktop/employment_desktop/color-work_2x.jpg 2x" src="./images/desktop/employment_desktop/color-work.jpg" alt="Написание кода" class="image" width="370" height="294" >
-                            <div class="employment-overlay">
-                                <p class="employment-overlay__text">Дизайнерские решения</p>
+                            <div class="employment__overlay">
+                                <p class="employment__overlay-text">Дизайнерские решения</p>
                             </div>
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
-        <section class="workers section">
+        <section class="section section--other-bg">
             <div class="container">
-                <h2 class="workers__title">Наша команда</h2>
-                <ul class="workers__list">
+                <h2 class="section__title">Наша команда</h2>
+                <ul class="workers">
                     <li class="workers__item">
                         <div class="workers__card">
                             <picture>
@@ -210,8 +210,8 @@
                                 <img src="./images/phone/team_phone/ihor.jpg" alt="Превью фото Игоря Демьяненко" class="image" width="450" height="460" >
                             </picture>
                             <div class="workers__card-bottom">
-                                <h3 class="workers__name">Игорь Демьяненко</h3>
-                                <p class="workers__position">Product Designer</p>
+                                <h3 class="workers__title">Игорь Демьяненко</h3>
+                                <p class="workers__text">Product Designer</p>
                                 <ul class="workers-soc-thumb">
                                     <li class="workers-soc-thumb__item">
                                         <a href="#" class="workers-soc-thumb__link">
@@ -257,8 +257,8 @@
                                 <img src="./images/phone/team_phone/olga.jpg" alt="Превью фото Ольги Репиной" class="image" width="450" height="460">
                             </picture>
                             <div class="workers__card-bottom">
-                                <h3 class="workers__name">Ольга Репина</h3>
-                                <p class="workers__position">Frontend Developer</p>
+                                <h3 class="workers__title">Ольга Репина</h3>
+                                <p class="workers__text">Frontend Developer</p>
                                 <ul class="workers-soc-thumb">
                                     <li class="workers-soc-thumb__item">
                                         <a href="#" class="workers-soc-thumb__link">
@@ -305,8 +305,8 @@
                             </picture>
 
                             <div class="workers__card-bottom">
-                                <h3 class="workers__name">Николай Тарасов</h3>
-                                <p class="workers__position">Marketing</p>
+                                <h3 class="workers__title">Николай Тарасов</h3>
+                                <p class="workers__text">Marketing</p>
                                 <ul class="workers-soc-thumb">
                                     <li class="workers-soc-thumb__item">
                                         <a href="#" class="workers-soc-thumb__link">
@@ -352,8 +352,8 @@
                                 <img src="./images/phone/team_phone/mikhail.jpg" alt="Превью фото Михаила Ермакова" class="image" width="450" height="460">
                             </picture>
                             <div class="workers__card-bottom">
-                                <h3 class="workers__name">Михаил Ермаков</h3>
-                                <p class="workers__position">UI Designer</p>
+                                <h3 class="workers__title">Михаил Ермаков</h3>
+                                <p class="workers__text">UI Designer</p>
                                 <ul class="workers-soc-thumb">
                                     <li class="workers-soc-thumb__item">
                                         <a href="#" class="workers-soc-thumb__link">
@@ -390,10 +390,10 @@
                 </ul>
             </div>
         </section>
-        <section class="section regular-customers">
+        <section class="section">
             <div class="container">
-                <h2 class="regular-customers__title">Постоянные клиенты</h2>
-                <ul class="regular-customers__list">
+                <h2 class="section__title">Постоянные клиенты</h2>
+                <ul class="regular-customers">
                     <li class="regular-customers__item">
                         <a href="#" class="regular-customers__link">
                             <svg class="regular-customers__icon" width="106" height="60">
@@ -489,7 +489,7 @@
                 <h3 class="page-footer__title">Подпишитесь на рассылку</h3>
                 <form class="footer-form" autocomplete="off">
                     <input class="footer-form__input" type="email" name="user-email" placeholder="E-mail">
-                    <button class="apply-button--features button--accent button" type="submit">Подписаться
+                    <button class="apply-button--features button" type="submit">Подписаться
                         <svg class="footer-form__icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>

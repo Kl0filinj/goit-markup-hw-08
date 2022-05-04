@@ -14,8 +14,8 @@
 <body>
     <header class="page-header">
         <!-- page-header__container -->
-        <div class="container page-header--flex">
-            <a href="index.html" class="logo">Web<span class="logo--accent logo--dark">Studio</span></a>
+        <div class="container page-header__container">
+            <a href="index.html" class="logo">Web<span class="logo--dark">Studio</span></a>
             <button type="button" class="menu-button" data-menu-open>
                 <svg width="24" height="16">
                     <use class="menu-icon" href="./images/icons.svg#menu-icon"></use>
@@ -37,14 +37,14 @@
                 <ul class="auth-info">
                     <li class="auth-info__item">
                         <a href="tel:+380961111111" class="auth-info__link auth-info__link--menu-size">
-                            <svg class="auth-info__icon" width="10" height="16">
+                            <svg class="auth-info__icon auth-info__icon--size-tel">
                                 <use href="./images/icons.svg#smartphone"></use>
                             </svg>
                             +38 096 111 11 11</a>
                     </li>
                     <li class="auth-info__item">
                         <a href="mailto:info@devstudio.com" class="auth-info__link">
-                            <svg class="auth-info__icon" width="16" height="12">
+                            <svg class="auth-info__icon auth-info__icon--size-mail">
                                 <use href="./images/icons.svg#envelope"></use>
                             </svg>
                             info@devstudio.com</a>
@@ -64,11 +64,11 @@
             <div class="container">
                 <h1 class="hiden-title">Список проектов</h1>
                 <ul class="filter-list">
-                    <li class="filter-list__item"><button type="button" class="button--filter button filter-button--features">Все</button></li>
-                    <li class="filter-list__item"><button type="button" class="button--filter button filter-button--features">Веб-сайты</button></li>
-                    <li class="filter-list__item"><button type="button" class="button--filter button filter-button--features">Приложения</button></li>
-                    <li class="filter-list__item"><button type="button" class="button--filter button filter-button--features">Дизайн</button></li>
-                    <li class="filter-list__item"><button type="button" class="button--filter button filter-button--features">Маркетинг</button></li>
+                    <li class="filter-list__item"><button type="button" class="button filter-button--features">Все</button></li>
+                    <li class="filter-list__item"><button type="button" class="button filter-button--features">Веб-сайты</button></li>
+                    <li class="filter-list__item"><button type="button" class="button filter-button--features">Приложения</button></li>
+                    <li class="filter-list__item"><button type="button" class="button filter-button--features">Дизайн</button></li>
+                    <li class="filter-list__item"><button type="button" class="button filter-button--features">Маркетинг</button></li>
                 </ul>
                 <ul class="projects-list">
                     <li class="projects-list__item">
@@ -322,7 +322,7 @@
                 <h3 class="page-footer__title">Подпишитесь на рассылку</h3>
                 <form class="footer-form" autocomplete="off">
                     <input class="footer-form__input" type="email" name="user-email" placeholder="E-mail">
-                    <button class="apply-button--features button--accent button" type="submit">Подписаться
+                    <button class="apply-button--features button" type="submit">Подписаться
                         <svg class="footer-form__icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>

@@ -25,7 +25,6 @@
 }
 
 .projects-list__item {
-    // margin-right: 30px;
     &:not(:last-child) {
         margin-bottom: 30px;
     }
@@ -76,10 +75,6 @@
             transform: translateY(0);
         }
     }
-
-    // @media screen and (min-width: 768px) {
-
-    // }
 }
 
 .project-card-meta {

@@ -92,14 +92,11 @@
             flex-grow: 1;
         }
 
-        // flex-basis: calc((100% - 165px) / 2);
-
         &:nth-child(2) {
             margin-left: 165px;
         }
     }
     @media screen and (min-width: 1200px) {
-        // flex-basis: calc((100% - 165px) / 3);
         &:first-child {
             flex-grow: 1;
         }
@@ -158,9 +155,6 @@
 }
 
 .footer-form {
-    // display: flex;
-    // align-items: center;
-
     margin-top: 20px;
     @media screen and (min-width: 1200px) {
         display: flex;

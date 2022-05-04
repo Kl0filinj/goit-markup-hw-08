@@ -13,9 +13,6 @@
     padding: 10px 32px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-color: transparent;
-}
-
-.button--accent {
     color: $accent-white-color;
     background-color: $accent-color;
 }
@@ -28,7 +25,11 @@
     cursor: pointer;
 }
 
-.button--filter {
+.filter-button--features {
+    font-weight: 500;
+    line-height: 1.6;
+    padding: 6px 22px;
+    border-color: transparent;
     color: $headline-color;
     background-color: $main-button-bg-color;
 
@@ -44,19 +45,14 @@
     }
 }
 
-.filter-button--features {
-    font-weight: 500;
-    line-height: 1.6;
-    padding: 6px 22px;
-    border-color: transparent;
-}
-
 .submit-button--features {
     padding: 10px 55px 10px 56px;
     margin-top: 30px;
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0 , 0.15);
     border: none;
+    color: $accent-white-color;
+    background-color: $accent-color;
 }
 
 .apply-button--features {
@@ -68,6 +64,8 @@
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: none;
+    color: $accent-white-color;
+    background-color: $accent-color;
 
     @media screen and (min-width: 1200px) {
         margin: 0 auto auto 12px;

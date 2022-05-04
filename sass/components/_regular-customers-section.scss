@@ -1,26 +1,10 @@
-.regular-customers__list {
+.regular-customers {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     @media screen and (min-width: 1200px) {
         flex-wrap: nowrap;
-    }
-}
-
-.regular-customers__title {
-    color: $headline-color;
-
-    margin-bottom: 30px;
-
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    @media screen and (min-width: 1200px) {
-        font-size: 36px;
-        line-height: 1.16;
     }
 }
 
