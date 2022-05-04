@@ -1151,6 +1151,7 @@ img {
 .regular-customers__item {
   -ms-flex-preferred-size: calc((100% - 30px) / 2);
       flex-basis: calc((100% - 30px) / 2);
+  margin-bottom: 30px;
   height: 92px;
 }
 
@@ -1158,8 +1159,8 @@ img {
   margin-left: 30px;
 }
 
-.regular-customers__item:nth-child(-n + 2) {
-  margin-bottom: 30px;
+.regular-customers__item:nth-last-child(-n + 2) {
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {

@@ -10,13 +10,14 @@
 
 .regular-customers__item {
     flex-basis: calc((100% - 30px) / 2);
+    margin-bottom: 30px;
     height: 92px;
 
     &:nth-child(2n) {
         margin-left: 30px;
     }
-    &:nth-child(-n + 2) {
-        margin-bottom: 30px;
+    &:nth-last-child(-n + 2) {
+        margin-bottom: 0;
     }
 
     @media screen and (min-width: 768px) {
