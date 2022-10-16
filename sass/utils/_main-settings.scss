@@ -1,9 +1,9 @@
 // Основные правила для всех элементов
 body {
-    color: $main-text-color;
-    background-color: $accent-white-color;
-    
-    font-family: $main-font;
+  color: $main-text-color;
+  background-color: $accent-white-color;
+
+  font-family: $main-font;
 }
 
 h1,
@@ -11,18 +11,18 @@ h2,
 h3,
 ul,
 p {
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 ul {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Опциональные настройки списков */
@@ -40,70 +40,68 @@ img {
 .footer-soc-thumb,
 .modal-form__list,
 .menu-soc-list {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 // Спрятанные заголовки
 
 .hiden-title {
-    position: absolute; 
-    width: 1px; 
-    height: 1px; 
-    margin: -1px; 
-    border: 0; 
-    padding: 0; 
-    white-space: nowrap; 
-    clip-path: inset(100%); 
-    clip: rect(0 0 0 0); 
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-
 .container {
-    max-width: 450px;
-    margin-right: auto;
-    margin-left: auto;
-    // outline: red solid 1px;
+  max-width: 450px;
+  margin-right: auto;
+  margin-left: auto;
+  // outline: red solid 1px;
 
-    @media screen and (min-width: 768px) {
-        max-width: 738px;
-    }
+  @media screen and (min-width: 768px) {
+    max-width: 738px;
+  }
 
-    @media screen and (min-width: 1200px)  {
-        max-width: 1200px;
-        padding: 0 15px;
-    }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    padding: 0 15px;
+  }
 }
 
 .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    // outline: green solid 1px;
-    @media screen and (min-width: 1200px) {
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
+  padding-top: 60px;
+  padding-bottom: 60px;
+  // outline: green solid 1px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section__title {
-    color: $headline-color;
+  color: $headline-color;
 
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    @media screen and (min-width: 1200px) {
-        font-size: 36px;
-        line-height: 1.16;
-    }
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
-
 .hidden-section {
-    @media screen and (max-width: 1199px) {
-        display: none;
-    }
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
